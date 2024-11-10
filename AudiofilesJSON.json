@@ -1,0 +1,23 @@
+[
+    {
+        "type": "AudioFile",
+        "name_file": "song",
+        "author": "flowers",
+        "duration": 3,
+        "file": "La-La-La"
+    },
+    {
+        "type": "AudioFile",
+        "name_file": "audiobook",
+        "author": "cat",
+        "duration": 2,
+        "file": "Bla-Bla"
+    },
+    {
+        "type": "AudioFile",
+        "name_file": "music",
+        "author": null,
+        "duration": 4,
+        "file": "Uc-Uc-Uc-Uc"
+    }
+]

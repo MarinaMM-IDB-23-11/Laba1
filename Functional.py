@@ -1,8 +1,10 @@
-from Base_CRUD import AudioFile, AudioEditor
+from Base_CRUD import AudioFile, AudioEditor, Effects
+
+from typing import Union
 
 class Playlist:  #Tracks are played here
     def __init__(self, audio: AudioEditor):
-        self.editor: list[AudioFile] = audio.audio_files
+        self.editor: list[Union[AudioFile, Effects]] = audio.audio_files
 
     def play_audiofile(self, name_file: str) -> None:  #plays the selected audio file by name
         for af in self.editor:
@@ -17,7 +19,7 @@ class Playlist:  #Tracks are played here
 
 class Cropping:  #this is where the audio file is cropped
     def __init__(self, audio: AudioEditor):
-        self.editor: list[AudioFile] = audio.audio_files
+        self.editor: list[Union[AudioFile, Effects]] = audio.audio_files
 
     def crop(self, name_file: str) -> str:
         for af in self.editor:
@@ -28,7 +30,7 @@ class Cropping:  #this is where the audio file is cropped
 
 class Continuation:  #here you can "continue" the audio
     def __init__(self, audio: AudioEditor):
-        self.editor: list[AudioFile] = audio.audio_files
+        self.editor: list[Union[AudioFile, Effects]] = audio.audio_files
 
     def proceed(self, name_file: str) -> str:
         for af in self.editor:
@@ -40,7 +42,7 @@ class Continuation:  #here you can "continue" the audio
 
 class Mix:  #You can mix audio files here
     def __init__(self, audio: AudioEditor):
-        self.editor: list[AudioFile] = audio.audio_files
+        self.editor: list[Union[AudioFile, Effects]] = audio.audio_files
 
     def connect(self, name_file1: str, name_file2: str) -> str:  #just by combining them
         for af1 in self.editor:
@@ -62,7 +64,3 @@ class Mix:  #You can mix audio files here
                         count += 1
                     return result  #before "La-La" and "Uc-Uc", after "La-Uc-La-Uc"
 
-class Effects(AudioFile):
-    def __init__(self, name_file: str, author: str, duration: int, file: str, effect: str):
-        super().__init__(name_file, author, duration, file)
-        self.effect = effect
