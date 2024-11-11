@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ba46423-1472-4173-9096-76385f4f58c7" name="Changes" comment="JSON&amp;XML">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/МандрыкаММ_ИДБ-23-11_лаба1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudiofilesJSON.json" beforeDir="false" afterPath="$PROJECT_DIR$/AudiofilesJSON.json" afterDir="false" />
+    <list default="true" id="3ba46423-1472-4173-9096-76385f4f58c7" name="Changes" comment="User interface">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudiofilesXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AudiofilesXML.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Base_CRUD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base_CRUD.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Functional.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functional.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON_and_XML.py" beforeDir="false" afterPath="$PROJECT_DIR$/JSON_and_XML.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731263390183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="User interface">
+      <option name="closed" value="true" />
+      <created>1731347578890</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731347578890</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +179,7 @@
     <MESSAGE value="Base&amp;CRUD" />
     <MESSAGE value="Functional" />
     <MESSAGE value="JSON&amp;XML" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSON&amp;XML" />
+    <MESSAGE value="User interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="User interface" />
   </component>
 </project>
