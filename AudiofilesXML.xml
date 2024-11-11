@@ -1,20 +1,21 @@
-<AudioFiles>
-    <AudioFile>
-        <name_file>song</name_file>
-        <author>flowers</author>
-        <duration>3</duration>
-        <file>La-La-La</file>
-    </AudioFile>
-    <AudioFile>
-        <name_file>audiobook</name_file>
-        <author>cat</author>
-        <duration>2</duration>
-        <file>Bla-Bla</file>
-    </AudioFile>
-    <AudioFile>
-        <name_file>music</name_file>
-        <author>NoNe</author>
-        <duration>4</duration>
-        <file>Uc-Uc-Uc-Uc</file>
-    </AudioFile>
-</AudioFiles>
+<?xml version="1.0" ?>
+<AudioFilesXML.xml>
+  <AudioFile>
+    <name_file>audiobook</name_file>
+    <author>cat</author>
+    <duration>2</duration>
+    <file>Bla-Bla</file>
+  </AudioFile>
+  <AudioFile>
+    <name_file>music</name_file>
+    <author>NoNe</author>
+    <duration>3</duration>
+    <file>Uc-Uc-Uc</file>
+  </AudioFile>
+  <AudioFile>
+    <name_file>song</name_file>
+    <author>flowers</author>
+    <duration>3</duration>
+    <file>La-La-La</file>
+  </AudioFile>
+</AudioFilesXML.xml>
