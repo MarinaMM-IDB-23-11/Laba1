@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ba46423-1472-4173-9096-76385f4f58c7" name="Changes" comment="User interface">
+    <list default="true" id="3ba46423-1472-4173-9096-76385f4f58c7" name="Changes" comment="Protection and other things">
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudiofilesJSON.json" beforeDir="false" afterPath="$PROJECT_DIR$/AudiofilesJSON.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudiofilesXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AudiofilesXML.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base_CRUD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base_CRUD.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Functional.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functional.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON_and_XML.py" beforeDir="false" afterPath="$PROJECT_DIR$/JSON_and_XML.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Functional">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Base_CRUD" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="МандрыкаММ_ИДБ-23-11_лаба1" />
       <option name="ENV_FILES" value="" />
@@ -106,8 +108,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="МандрыкаММ_ИДБ-23-11_лаба1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.Functional" />
         <item itemvalue="Python.JSON_and_XML" />
       </list>
@@ -161,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731347578890</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Protection and other things">
+      <option name="closed" value="true" />
+      <created>1731351930973</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731351930973</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +213,7 @@
     <MESSAGE value="Functional" />
     <MESSAGE value="JSON&amp;XML" />
     <MESSAGE value="User interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="User interface" />
+    <MESSAGE value="Protection and other things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Protection and other things" />
   </component>
 </project>

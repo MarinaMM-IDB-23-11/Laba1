@@ -1,6 +1,13 @@
 [
     {
         "type": "AudioFile",
+        "name_file": "song",
+        "author": "flowers",
+        "duration": 3,
+        "file": "La-La-La"
+    },
+    {
+        "type": "AudioFile",
         "name_file": "audiobook",
         "author": "cat",
         "duration": 2,
@@ -10,14 +17,7 @@
         "type": "AudioFile",
         "name_file": "music",
         "author": "NoNe",
-        "duration": 3,
-        "file": "Uc-Uc-Uc"
-    },
-    {
-        "type": "AudioFile",
-        "name_file": "song",
-        "author": "flowers",
-        "duration": 3,
-        "file": "La-La-La"
+        "duration": 4,
+        "file": "Uc-Uc-Uc-Uc"
     }
 ]
