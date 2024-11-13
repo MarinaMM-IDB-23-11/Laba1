@@ -2,13 +2,15 @@ import json
 import xml.etree.ElementTree as ET
 from typing import Union
 from xml.dom import minidom
+from xml.dom.minidom import Document
+from xml.etree.ElementTree import ElementTree
 
 from Base_CRUD import AudioEditor, AudioFile, Effects
 
 
 class JSONSerializer:
     def __init__(self, editor: AudioEditor):
-        self.json_editor = editor
+        self.json_editor: AudioEditor = editor
 
     def save_to_json(self, filename: str) -> bool:  # serialization
         try:
@@ -31,25 +33,25 @@ class JSONSerializer:
                 audio_type: Union[str, None] = data.pop("type", None)  # We delete the "type", if there is one
 
                 if audio_type == "Effect":
-                    audio_file = Effects(**data)  # Creating an Effect object
+                    audio_file: Effects = Effects(**data)  # Creating an Effect object
                 else:
-                    audio_file = AudioFile(**data)
+                    audio_file: AudioFile = AudioFile(**data)
                 self.json_editor.create_audio_file(audio_file)
         return self.json_editor
 
 
 class XMLSerializer:
     def __init__(self, editor: AudioEditor):
-        self.xml_editor = editor
+        self.xml_editor: AudioEditor = editor
 
     def save_to_xml(self, filename: str) -> bool:  # serialization
-        root = ET.Element("AudioFilesXML.xml")
+        root: ET.Element = ET.Element("AudioFilesXML.xml")
 
         for audio in self.xml_editor.audio_files:
             root.append(audio.to_xml())
 
         # Creating a tree
-        pretty_xml = self.prettify(root)
+        pretty_xml: str = self.prettify(root)
 
         # We write it to a file
         try:
@@ -62,8 +64,8 @@ class XMLSerializer:
 
     def load_from_xml(self, filename: str) -> AudioEditor:  # deserialization
         try:
-            tree = ET.parse(filename)
-            root = tree.getroot()
+            tree: ElementTree = ET.parse(filename)
+            root: ET.Element = tree.getroot()
 
             for audio_elem in root.findall('AudioFile'):
                 if audio_elem.find('effect') is not None:
@@ -90,7 +92,7 @@ class XMLSerializer:
     def prettify(elem: ET.Element) -> str:
         """Format XML with indentation."""
         # Converting an element to a string
-        rough_string = ET.tostring(elem, 'utf-8')
+        rough_string: any = ET.tostring(elem, 'utf-8')
         # Parse the string and create a beautiful output
-        repairs = minidom.parseString(rough_string)
+        repairs: Document = minidom.parseString(rough_string)
         return repairs.toprettyxml(indent="  ")

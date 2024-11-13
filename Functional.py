@@ -10,7 +10,7 @@ class Playlist:  # Tracks are played here
         for af in self.editor.audio_files:
             if af.name_file == name_file:
                 print(af.file)
-                break
+                return
         print("No such audiofile.")
 
     def play_all(self) -> None:

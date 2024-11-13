@@ -54,13 +54,14 @@ class AudioEditor:  # CRUD
             if af.name_file == name_file:
                 af.name_file = input("Enter the name of the audio: ")
                 af.author = input("Enter the author`s name: ")
+                return
         print("No such audiofile.")
 
     def delete_audio_file(self, name_file: str) -> None:  # delete
         for af in self.audio_files:
             if af.name_file == name_file:
                 self.audio_files.remove(af)
-                break
+                return
         print("No such audiofile.")
 
 
